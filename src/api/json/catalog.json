@@ -9672,6 +9672,12 @@
       "description": "Definition for a single repository",
       "fileMatch": ["raid.yaml", "raid.yml", "raid.json"],
       "url": "https://raw.githubusercontent.com/8bitAlex/raid/main/schemas/raid-repo.schema.json"
+    },
+    {
+      "name": "Podman Desktop Extension",
+      "description": "Podman Desktop extension package.json manifest",
+      "fileMatch": [],
+      "url": "https://www.schemastore.org/podman-desktop-extension.json"
     }
   ]
 }
