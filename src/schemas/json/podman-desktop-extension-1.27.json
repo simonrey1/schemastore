@@ -1,11 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://json.schemastore.org/podman-desktop-extension-1.27.json",
   "title": "Podman Desktop Extension Manifest",
   "description": "Schema for Podman Desktop extension package.json files (fork-only intentional test change)",
   "allOf": [
-    {
-      "$ref": "https://json.schemastore.org/package.json"
-    },
     {
       "$schema": "http://json-schema.org/draft-07/schema#",
       "type": "object",
@@ -43,10 +41,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "light",
-                "dark"
-              ],
+              "required": ["light", "dark"],
               "additionalProperties": false
             }
           ]
@@ -112,31 +107,13 @@
                         "anyOf": [
                           {
                             "type": "string",
-                            "enum": [
-                              "markdown",
-                              "string",
-                              "number",
-                              "integer",
-                              "boolean",
-                              "null",
-                              "array",
-                              "object"
-                            ]
+                            "enum": ["markdown", "string", "number", "integer", "boolean", "null", "array", "object"]
                           },
                           {
                             "type": "array",
                             "items": {
                               "type": "string",
-                              "enum": [
-                                "markdown",
-                                "string",
-                                "number",
-                                "integer",
-                                "boolean",
-                                "null",
-                                "array",
-                                "object"
-                              ]
+                              "enum": ["markdown", "string", "number", "integer", "boolean", "null", "array", "object"]
                             }
                           }
                         ]
@@ -260,15 +237,11 @@
                       "type": "string"
                     }
                   },
-                  "required": [
-                    "id"
-                  ],
+                  "required": ["id"],
                   "additionalProperties": false
                 }
               },
-              "required": [
-                "title"
-              ],
+              "required": ["title"],
               "additionalProperties": false
             },
             "commands": {
@@ -303,10 +276,7 @@
                             "type": "string"
                           }
                         },
-                        "required": [
-                          "light",
-                          "dark"
-                        ],
+                        "required": ["light", "dark"],
                         "additionalProperties": false
                       }
                     ]
@@ -347,10 +317,7 @@
                       "type": "string"
                     }
                   },
-                  "required": [
-                    "command",
-                    "title"
-                  ],
+                  "required": ["command", "title"],
                   "additionalProperties": false
                 }
               }
@@ -376,9 +343,7 @@
                         "type": "string"
                       }
                     },
-                    "required": [
-                      "fontCharacter"
-                    ],
+                    "required": ["fontCharacter"],
                     "additionalProperties": false
                   }
                 },
@@ -409,12 +374,7 @@
                     }
                   }
                 },
-                "required": [
-                  "id",
-                  "name",
-                  "parent",
-                  "colors"
-                ],
+                "required": ["id", "name", "parent", "colors"],
                 "additionalProperties": false
               }
             },
@@ -437,9 +397,7 @@
                           "type": "string"
                         }
                       },
-                      "required": [
-                        "icon"
-                      ],
+                      "required": ["icon"],
                       "additionalProperties": false
                     },
                     {
@@ -469,24 +427,17 @@
                                       "type": "string"
                                     }
                                   },
-                                  "required": [
-                                    "light",
-                                    "dark"
-                                  ],
+                                  "required": ["light", "dark"],
                                   "additionalProperties": false
                                 }
                               ]
                             }
                           },
-                          "required": [
-                            "label"
-                          ],
+                          "required": ["label"],
                           "additionalProperties": false
                         }
                       },
-                      "required": [
-                        "badge"
-                      ],
+                      "required": ["badge"],
                       "additionalProperties": false
                     }
                   ]
@@ -515,10 +466,7 @@
                       "type": "string"
                     }
                   },
-                  "required": [
-                    "path",
-                    "altText"
-                  ],
+                  "required": ["path", "altText"],
                   "additionalProperties": false
                 },
                 "steps": {
@@ -545,10 +493,7 @@
                             "type": "string"
                           }
                         },
-                        "required": [
-                          "path",
-                          "altText"
-                        ],
+                        "required": ["path", "altText"],
                         "additionalProperties": false
                       },
                       "command": {
@@ -577,43 +522,28 @@
                                 "type": "string"
                               }
                             },
-                            "required": [
-                              "value"
-                            ],
+                            "required": ["value"],
                             "additionalProperties": false
                           }
                         }
                       },
                       "component": {
                         "type": "string",
-                        "enum": [
-                          "createContainerProviderConnection",
-                          "createKubernetesProviderConnection"
-                        ]
+                        "enum": ["createContainerProviderConnection", "createKubernetesProviderConnection"]
                       },
                       "when": {
                         "type": "string"
                       },
                       "status": {
                         "type": "string",
-                        "enum": [
-                          "completed",
-                          "failed",
-                          "skipped"
-                        ]
+                        "enum": ["completed", "failed", "skipped"]
                       },
                       "state": {
                         "type": "string",
-                        "enum": [
-                          "completed",
-                          "failed"
-                        ]
+                        "enum": ["completed", "failed"]
                       }
                     },
-                    "required": [
-                      "id",
-                      "title"
-                    ],
+                    "required": ["id", "title"],
                     "additionalProperties": false
                   }
                 },
@@ -621,11 +551,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "title",
-                "steps",
-                "enablement"
-              ],
+              "required": ["title", "steps", "enablement"],
               "additionalProperties": false
             },
             "features": {
@@ -638,15 +564,8 @@
           "additionalProperties": false
         }
       },
-      "required": [
-        "name",
-        "displayName",
-        "version",
-        "publisher",
-        "description"
-      ],
+      "required": ["name", "displayName", "version", "publisher", "description"],
       "additionalProperties": {}
     }
-  ],
-  "$id": "https://json.schemastore.org/podman-desktop-extension-1.27.json"
+  ]
 }
