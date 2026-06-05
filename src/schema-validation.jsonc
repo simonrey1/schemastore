@@ -1634,6 +1634,9 @@
     },
     "vespertide-model.json": {
       "unknownFormat": ["uint32", "int64", "double", "int32"]
+    },
+    "podman-desktop-extension-1.28.json": {
+      "externalSchema": ["package.json"]
     }
   }
 }
