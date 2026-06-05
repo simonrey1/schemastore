@@ -1332,6 +1332,12 @@
       "unknownFormat": ["<app> <your args>"],
       "unknownKeywords": ["exec", "tsType"]
     },
+    "podman-desktop-extension.json": {
+      "externalSchema": ["package.json"]
+    },
+    "podman-desktop-extension-1.27.json": {
+      "externalSchema": ["package.json"]
+    },
     "partial-pdm.json": {
       "externalSchema": ["partial-pdm-dockerize.json"]
     },
