@@ -1,5 +1,6 @@
 {
   "$schema": "./schema-validation.schema.json",
+  // Managed by Podman Desktop Team: @podman-desktop-bot @simonrey1 @benoitf @jiridostal
   "ajvNotStrictMode": [
     "anywork-ac-1.0.json",
     "anywork-ac-1.1.json",
