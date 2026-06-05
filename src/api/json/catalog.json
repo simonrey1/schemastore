@@ -10292,13 +10292,14 @@
       "url": "https://raw.githubusercontent.com/AmxxModularEcosystem/amxx-builder/master/schema/amxbuild.schema.json"
     },
     {
-      "name": "Podman Desktop Extension",
-      "description": "Podman Desktop extension package.json manifest",
-      "fileMatch": [],
-      "url": "https://www.schemastore.org/podman-desktop-extension.json",
-      "versions": {
-        "1.27": "https://www.schemastore.org/podman-desktop-extension-1.27.json"
-      }
-    }
+  "name": "Podman Desktop Extension",
+  "description": "Podman Desktop extension package.json manifest",
+  "fileMatch": [],
+  "url": "https://www.schemastore.org/podman-desktop-extension.json",
+  "versions": {
+    "1.27": "https://www.schemastore.org/podman-desktop-extension-1.27.json",
+    "1.28": "https://www.schemastore.org/podman-desktop-extension-1.28.json"
+  }
+}
   ]
 }
