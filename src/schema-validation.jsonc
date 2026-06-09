@@ -349,7 +349,8 @@
     "cinnamon-spice-settings.json",
     "pnpm-workspace.json",
     "podman-desktop-extension.json",
-    "podman-desktop-extension-1.27.json"
+    "podman-desktop-extension-1.27.json",
+    "podman-desktop-extension-1.28.json"
   ],
   "fileMatchConflict": [
     // Name conflicts must be avoided. Do not add additional items here
@@ -1664,6 +1665,23 @@
     },
     "vespertide-model.json": {
       "unknownFormat": ["uint32", "int64", "double", "int32"]
+    },
+    "podman-desktop-extension-1.28.json": {
+      "externalSchema": [
+        "package.json",
+        "eslintrc.json",
+        "partial-eslint-plugins.json",
+        "prettierrc.json",
+        "ava.json",
+        "npm-badges.json",
+        "stylelintrc.json",
+        "semantic-release.json",
+        "jscpd.json",
+        "nodemon.json",
+        "base.json",
+        "quikrun.json"
+      ],
+      "unknownKeywords": ["exec", "tsType"]
     }
   }
 }
